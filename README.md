@@ -33,4 +33,8 @@ To run both the client and the server concurrently:
 npm run start-both
 
 The server will start on http://localhost:3001 and the client on http://localhost:3000 <br>
-Open http://localhost:3000 and happy browsing!
+<strong> Open http://localhost:3000 and happy browsing! </strong>
+
+# Suggested Improvements
+
+One useful enhancement would be to verify the existence of the postal code. If the postal code does not already exist, a prompt should be displayed advising the user to enter a valid UK postcode. This check would help enhancing the overall user experience.
