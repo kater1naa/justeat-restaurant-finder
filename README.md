@@ -21,10 +21,13 @@ npm install
 
 4) Install dependencies for the client:
 
-cd ./client/my-react-client <br>
+cd client/my-react-client <br>
 npm install
 
-5) Run the Application
+5) Return to the root of the project (justeat-restaurant-finder):
+cd ../../    
+   
+6) Run the Application
 To run both the client and the server concurrently:
 
 npm run start-both
