@@ -14,12 +14,12 @@ cd justeat-restaurant-finder
 
 3) Install dependencies for the server:
    
-cd server
+cd server <br>
 npm install
 
 4) Install dependencies for the client:
 
-cd ./client/my-react-client
+cd ./client/my-react-client <br>
 npm install
 
 5) Run the Application
