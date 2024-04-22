@@ -1,6 +1,6 @@
 # About 
 
-The JustEat Restaurant Finder is a full-stack application allowing users to search for restaurants by UK postal code. The frontend is built with React and styled using TailwindCSS, while the backend is powered by Node.js with Express.
+The JustEat Restaurant Finder is a full-stack application allowing users to search for restaurants by UK postal code, utilizing JustEat's API. The frontend is built with React and styled using TailwindCSS, while the backend is powered by Node.js with Express.
 
 # Guide on building, compiling and running the application
 
