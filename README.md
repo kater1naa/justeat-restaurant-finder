@@ -6,7 +6,7 @@ The JustEat Restaurant Finder is a full-stack application allowing users to sear
 
 1) Clone the repository to your local machine:
 
-git clone https://github.com/your-username/justeat-restaurant-finder.git
+git clone https://github.com/kater1naa/justeat-restaurant-finder.git
 
 2) Navigate to the project directory:
 
