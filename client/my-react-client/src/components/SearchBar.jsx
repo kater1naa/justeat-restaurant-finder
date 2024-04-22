@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { FaSearch } from "react-icons/fa";
+import RestaurantList from "../components/RestaurantList";
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar = ({ onSearch, restaurants, searchAttempted }) => {
   const [postcode, setPostcode] = useState("");
 
   const handleSubmit = (event) => {
@@ -9,19 +11,26 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="flex items-center max-w-sm mx-auto"
-    >
-      <input
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        type="text"
-        value={postcode}
-        onChange={(e) => setPostcode(e.target.value)}
-        placeholder="Enter UK Postcode"
-        required
-      />
-      <button type="submit">Search</button>
+    <form onSubmit={handleSubmit} className="w-[500px] relative mx-auto">
+      <div className="relative">
+        <input
+          className="w-full p-4 rounded-full bg-slate-800 text-white"
+          type="text"
+          value={postcode}
+          onChange={(e) => setPostcode(e.target.value)}
+          placeholder="Enter UK Postcode e.g. EC4M7RF"
+          required
+        />
+        <button
+          className="absolute right-1 top-1/2 -translate-y-1/2 p-4 bg-[#FF8000] opacity-75 rounded-full "
+          type="submit"
+        >
+          <FaSearch />
+        </button>
+      </div>
+      <div className="absolute top-20 p-4 w-full rounded-xl  flex flex-col gap-2">
+        <RestaurantList restaurants={restaurants} />
+      </div>
     </form>
   );
 };
